@@ -25,6 +25,8 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: 'platform-tools'
 
       - name: Install Bubblewrap CLI
         run: npm i -g @bubblewrap/cli
@@ -49,6 +51,10 @@ jobs:
           cat > "$HOME/.bubblewrap/config.json" << JSON
           { "jdkPath": "$JAVA_HOME", "androidSdkPath": "$ANDROID_SDK_ROOT" }
           JSON
+          # Bubblewrap looks for sdkmanager under <sdk>/tools/bin
+          if [ ! -e "$ANDROID_SDK_ROOT/tools" ]; then
+            ln -s "$(dirname "$(dirname "$(readlink -f "$(command -v sdkmanager)")")")" "$ANDROID_SDK_ROOT/tools"
+          fi
 
       - name: Generate/Update Android project from TWA manifest
         shell: bash

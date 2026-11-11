@@ -18,6 +18,7 @@
   },
   "appVersionCode": 2,
   "appVersion": "2",
+  "minSdkVersion": 24,
   "generatorApp": "bubblewrap-cli",
   "fallbackType": "webview",
   "orientation": "portrait"
