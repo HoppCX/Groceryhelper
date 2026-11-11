@@ -1,6 +1,6 @@
 {
   "packageId": "com.itchyfeetleech.groceryhelper",
-  "host": "itchyfeetleech.github.io",
+  "host": "hoppcx.github.io",
   "name": "GroceryHelper",
   "launcherName": "GroceryHelper",
   "display": "standalone",
@@ -9,15 +9,15 @@
   "backgroundColor": "#fff7ed",
   "enableNotifications": false,
   "startUrl": "/Groceryhelper/?apk=1",
-  "iconUrl": "https://raw.githubusercontent.com/itchyfeetleech/Groceryhelper/android-apk/public/icons/app-icon-512.png",
-  "maskableIconUrl": "https://raw.githubusercontent.com/itchyfeetleech/Groceryhelper/android-apk/public/icons/app-icon-512.png",
+  "iconUrl": "https://raw.githubusercontent.com/HoppCX/Groceryhelper/android-apk/public/icons/app-icon-512.png",
+  "maskableIconUrl": "https://raw.githubusercontent.com/HoppCX/Groceryhelper/android-apk/public/icons/app-icon-512.png",
   "splashScreenFadeOutDuration": 300,
   "signingKey": {
     "path": "./android.keystore",
     "alias": "android"
   },
-  "appVersionCode": 1,
-  "appVersion": "1",
+  "appVersionCode": 2,
+  "appVersion": "2",
   "generatorApp": "bubblewrap-cli",
   "fallbackType": "webview",
   "orientation": "portrait"

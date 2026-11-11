@@ -1,7 +1,7 @@
 {
   "name": "GroceryHelper",
   "short_name": "GroceryHelper",
-  "start_url": "https://itchyfeetleech.github.io/Groceryhelper/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#faf3e8",
   "theme_color": "#b8441f",
